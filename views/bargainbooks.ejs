@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <title><%=shopName%></title>
+    <link rel="stylesheet"  type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <h1><%=shopName%></h1>
+    <h2>Bertie's Books that are on a Belligerent Bargain:</h3>
+    <ul>
+        <% for (let book of availableBooks) { %>
+        <li><strong><%= book.name %> </strong> £<%= book.price %></li>
+        <% } %>
+    </ul>
+    <ul>
+    </ul>
+    <p><a href="/">Home</a></p>
+  </body>
+</html>
